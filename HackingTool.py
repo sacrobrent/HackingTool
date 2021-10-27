@@ -86,7 +86,7 @@ if __name__ == "__main__":
                         [1] Manual 
                         [2] Default
                 """)
-                choice = input("Z4nzu =>> ")
+                choice = input("sacrobrent =>> ")
 
                 if choice == "1":
                     inpath = input("Enter Path (with Directory Name) >> ")
@@ -94,7 +94,7 @@ if __name__ == "__main__":
                         f.write(inpath)
                     print(f"Successfully Set Path to: {inpath}")
                 elif choice == "2":
-                    autopath = "/home/hackingtool/"
+                    autopath = "/home/HackingTool/"
                     with open(fpath, "w") as f:
                         f.write(autopath)
                     print(f"Your Default Path Is: {autopath}")
