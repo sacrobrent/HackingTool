@@ -33,9 +33,9 @@ echo -e ${CYAN}              "Select Best Option : "
 echo ""
 echo -e "${WHITE}              [1] Kali Linux / Parrot-Os "
 echo -e "${WHITE}              [0] Exit "
-echo -n -e "Z4nzu >> "
+echo -n -e "sacrobrent >> "
 read choice
-INSTALL_DIR="/usr/share/doc/hackingtool"
+INSTALL_DIR="/usr/share/doc/HackingTool"
 BIN_DIR="/usr/bin/"
 if [ $choice == 1 ]; then 
 	echo "[*] Checking Internet Connection .."
@@ -46,7 +46,7 @@ if [ $choice == 1 ]; then
 	    sudo apt-get install python-pip
 	    echo "[✔] Checking directories..."
 	    if [ -d "$INSTALL_DIR" ]; then
-	        echo "[!] A Directory hackingtool Was Found.. Do You Want To Replace It ? [y/n]:" ;
+	        echo "[!] A Directory HackingTool Was Found.. Do You Want To Replace It ? [y/n]:" ;
 	        read input
 	        if [ "$input" = "y" ]; then
 	            rm -R "$INSTALL_DIR"
@@ -56,12 +56,12 @@ if [ $choice == 1 ]; then
 	    fi
     		echo "[✔] Installing ...";
 		echo "";
-		git clone https://github.com/Z4nzu/hackingtool.git "$INSTALL_DIR";
+		git clone https://github.com/sacrobrent/HackingTool.git "$INSTALL_DIR";
 		echo "#!/bin/bash
-		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > hackingtool;
-		sudo chmod +x hackingtool;
-		sudo cp hackingtool /usr/bin/;
-		rm hackingtool;
+		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > HackingTool;
+		sudo chmod +x HackingTool;
+		sudo cp HackingTool /usr/bin/;
+		rm HackingTool;
 		echo ""; 
 		echo "[✔] Trying to installing Requirements ..."
 		sudo pip3 install lolcat
@@ -81,7 +81,7 @@ if [ $choice == 1 ]; then
         echo "";
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
         echo 		"		[+]						      		[+]"
-        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (hackingtool) ✔✔✔ 	[+]"
+        echo -e $ORANGE  "		[+]     ✔✔✔ Now Just Type In Terminal (HackingTool) ✔✔✔ 	[+]"
         echo 		"		[+]						      		[+]"
         echo -e $ORANGE "		[+]+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++[+]"
     else
