@@ -58,7 +58,7 @@ if [ $choice == 1 ]; then
 		echo "";
 		git clone https://github.com/sacrobrent/HackingTool.git "$INSTALL_DIR";
 		echo "#!/bin/bash
-		python3 $INSTALL_DIR/hackingtool.py" '${1+"$@"}' > HackingTool;
+		python3 $INSTALL_DIR/HackingTool.py" '${1+"$@"}' > HackingTool;
 		sudo chmod +x HackingTool;
 		sudo cp HackingTool /usr/bin/;
 		rm HackingTool;
